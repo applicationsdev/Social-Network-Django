@@ -1,0 +1,25 @@
+{% extends 'theme.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+        <div class="row">
+          <div class="col-md-6 col-md-offset-4">
+                
+            {% if form.errors %}
+                <p>To access your account you must login using valid username and password. Please try to login again or signup to create new account.</p>
+            {% else %}
+                <p></p>
+            {% endif %}
+                
+            <h2>Login</h2>
+                
+            <form action="{% url 'login' %}" method="post">
+                {{ form.as_p }}
+                {% csrf_token %}
+                <input type="hidden" name="next" value="{{ next }}">
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+          </div>
+        </div><!-- /row -->
+{% endblock %}
