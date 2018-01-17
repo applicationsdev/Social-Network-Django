@@ -1,0 +1,33 @@
+# Applications Developer
+# https://github.com/applicationsdev/Django-Python-Redis-AJAX-Social-Network
+# GPL-3.0
+
+# Line endings normalized in text/script files
+* text=auto
+
+# Exclude from processing
+*.jpg binary
+*.png binary
+*.gif binary
+*.ico binary
+*.pdf binary
+
+# Describe Python-Django file types
+*.py linguist-language=Python
+
+# Linguist-vendor commited paths
+user/public/* linguist-vendored
+
+# Linguist-vendor file types
+*.css linguist-vendored
+*.scss linguist-vendored
+*.less linguist-vendored
+*.map linguist-vendored
+*.xml linguist-vendored
+*.txt linguist-vendored
+*.json linguist-vendored
+*.html linguist-vendored
+*.js linguist-vendored
+
+# Documentation files
+*.md linguist-documentation
