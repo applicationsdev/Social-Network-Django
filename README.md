@@ -1,5 +1,5 @@
 ### Applications Developer
-[Full Stack Case Studies & Forks](https://github.com/applicationsdev?tab=repositories)
+[Full Stack Solutions](https://github.com/applicationsdev?tab=repositories)
 
 ### About
 Social network app with Django, Redis, AJAX & Bootstrap
@@ -11,4 +11,10 @@ Social network app with Django, Redis, AJAX & Bootstrap
 coming soon..
 
 ### Resources
-[Django](https://www.djangoproject.com/) | [Redis](https://redis.io/) | [AJAX](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX/Getting_Started) | [Bootstrap](http://getbootstrap.com/)
+- [Django](https://www.djangoproject.com/)
+- [Python](https://www.python.org/)
+- [Redis](https://redis.io/)
+- [Bootstrap](http://getbootstrap.com/)
+
+### References
+- [AJAX](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX/Getting_Started)

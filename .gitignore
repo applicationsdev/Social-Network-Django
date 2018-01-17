@@ -16,11 +16,12 @@
 *.mo
 *.pot
 
-# Common settings for MacOS environments
+# Common settings for MacOS dev. environments
 .DS_Store
 ._*
+.Trashes
 
-# Common settings for Windows environments
+# Common settings for Windows dev. environments
 [Dd]esktop.ini
 # *umbs.db
 
