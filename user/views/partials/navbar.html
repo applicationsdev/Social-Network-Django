@@ -6,31 +6,40 @@
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              My Account
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Option</a>
-              <a class="dropdown-item" href="#">Option</a>
-              <a class="dropdown-item" href="#">Option</a>
-            </div>
-          </li>
-        </ul>
-        
-        <form class="form-inline my-2 my-lg-0">
+        <form class="form-inline my-2 my-lg-0 ml-auto">
           <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
+        
+        <ul class="navbar-nav">
+
+          {% if request.user.is_authenticated %}
+            <!-- Authorized user menu -->
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'index' %}">{{ request.user.first_name }} Profile</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Account
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="{% url 'dashboard' %}">Dashboard</a>
+                <a class="dropdown-item" href="{% url 'logout' %}">Logout</a>
+              </div>
+            </li>
+          
+          {% else %}
+            <!-- Unauthorized user menu -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Signup</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'login' %}">Login</a>
+            </li>
+          
+          {% endif %}
+          
+        </ul>
+        
       </div>
     </nav>
