@@ -7,9 +7,11 @@
           <div class="col-md-6 col-md-offset-4">
                 
             {% if form.errors %}
-                <p>To access your account you must login using valid username and password. Please try to login again or signup to create new account.</p>
+                <div class="alert alert-warning" role="alert">
+                    To access your account you must login using valid username and password. Please try to login again or signup to create new account.
+                </div>
             {% else %}
-                <p></p>
+                <br>
             {% endif %}
                 
             <h2>Login</h2>
@@ -20,6 +22,7 @@
                 <input type="hidden" name="next" value="{{ next }}">
                 <button type="submit" class="btn btn-primary">Login</button>
             </form>
+            
           </div>
         </div><!-- /row -->
 {% endblock %}

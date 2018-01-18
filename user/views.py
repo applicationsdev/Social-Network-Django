@@ -5,7 +5,12 @@ from django.contrib.auth import authenticate, login
 from .forms import LoginForm
 from django.contrib.auth.decorators import login_required
 
-# User Login view
+# Website - Index page view
+# note: This view is placed here for testing purposes. In future commits it may be moved to separate Django view entity.
+def index(request):
+    return render(request, 'pages/index.html', {'section': 'index'})
+
+# User - Login view
 def user_login(request):
     if request.method == 'POST':
         form = LoginForm(request.POST)
@@ -14,6 +19,7 @@ def user_login(request):
         if form.is_valid():
             cd = form.cleaned_data
             user = authenticate(username=cd['username'], password=cd['password'])
+            
             if user is not None:
                 if user.is_active:
                     login(request, user)
@@ -28,7 +34,7 @@ def user_login(request):
     
     return render(request, 'user/login.html', {'form': form})
     
-# User Dashboard view
+# User - Dashboard view
 @login_required
 def dashboard(request):
-    return render(request, 'user/dashboard.html', {'section': 'dashboard'})
+    return render(request, 'private/dashboard.html', {'section': 'dashboard'})
