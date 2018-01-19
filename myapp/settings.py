@@ -134,6 +134,6 @@ STATICFILES_DIRS = [
 # URL Resolvers
 from django.urls import reverse_lazy
 
-LOGIN_REDIRECT_URL = reverse_lazy('dashboard')
 LOGIN_URL = reverse_lazy('login')
+LOGIN_REDIRECT_URL = reverse_lazy('dashboard')
 LOGOUT_REDIRECT_URL = reverse_lazy('login')

@@ -1,0 +1,28 @@
+{% extends 'theme.html' %}
+
+{% block title %}Signup{% endblock %}
+
+{% block content %}
+        <div class="row">
+          <div class="col-md-6 col-md-offset-4">
+                
+            {% if form.errors %}
+                <div class="alert alert-warning" role="alert">
+                    Error
+                </div>
+            {% else %}
+                <br>
+            {% endif %}
+                
+            <h2>Signup</h2>
+                
+            <form action="." method="post">
+                {{ registerForm.as_p }}
+                {% csrf_token %}
+                <input type="hidden" name="next" value="{{ next }}">
+                <button type="submit" class="btn btn-primary">Signup</button>
+            </form>
+            
+          </div>
+        </div><!-- /row -->
+{% endblock %}

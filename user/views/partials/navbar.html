@@ -16,7 +16,7 @@
           {% if request.user.is_authenticated %}
             <!-- Authorized user menu -->
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'index' %}">{{ request.user.first_name }} Profile</a>
+              <a class="nav-link" href="{% url 'index' %}">{{ request.user.username }} Profile</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -31,7 +31,7 @@
           {% else %}
             <!-- Unauthorized user menu -->
             <li class="nav-item">
-              <a class="nav-link" href="#">Signup</a>
+              <a class="nav-link" href="{% url 'register' %}">Signup</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{% url 'login' %}">Login</a>
