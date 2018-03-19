@@ -1,5 +1,5 @@
 # Applications Developer
-# https://github.com/applicationsdev/Django-Python-Redis-AJAX-Social-Network
+# https://github.com/applicationsdev/Social-Network-Django
 
 # Line endings get normalized in text/script files
 * text=auto
@@ -14,7 +14,7 @@
 # Linguist-language description for primary file types
 *.py linguist-language=Python
 
-# Linguist-vendor description for commited paths
+# Linguist-vendor description for commited directories
 user/public/* linguist-vendored
 
 # Linguist-vendor description for commited file types
@@ -29,4 +29,6 @@ user/public/* linguist-vendored
 *.html linguist-vendored
 
 # Documentation files
+# Linguist-documentation description for commited directories & file types
+.documentation/* linguist-documentation
 *.md linguist-documentation

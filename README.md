@@ -1,21 +1,26 @@
-### Applications Developer
-[Full Stack Solutions](https://github.com/applicationsdev?tab=repositories)
-
 ### About
-Social network app with Django, Redis, AJAX & Bootstrap
+- Social Network Application
+- Back End: Django, Python, SQLite
+- Front End: Django Template Language, Bootstrap
 
 ### Get started
 coming soon..
 
-### Official Resources
-- [Django](https://www.djangoproject.com/)
+### Resources - References
 - [Python](https://www.python.org/)
-- [Redis](https://redis.io/)
-- [Bootstrap](http://getbootstrap.com/)
+- [Django](https://www.djangoproject.com/)
 
-### References
+- [SQLite](https://www.sqlite.org/index.html)
+
 - [AJAX](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX/Getting_Started)
 
+- [Bootstrap](http://getbootstrap.com/)
+
 ### License
-- Author's work is licensed under [MIT](https://opensource.org/licenses/MIT) License
-- Frameworks & packages are licensed by their respective developers and/or owners
+[Social Network Django](https://github.com/applicationsdev/Social-Network-Django)
+
+&copy; [Applications Developer](https://github.com/applicationsdev?tab=repositories), 2018
+
+Author's work is licensed under [MIT](https://opensource.org/licenses/MIT) License | By using this open source product you accept the [license terms](https://opensource.org/licenses/MIT) in full
+
+Frameworks, packages & web resources are properties of their respective developers and/or owners & are licensed by them
